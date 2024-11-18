@@ -1,0 +1,38 @@
+
+// styles.css
+.git-branch-button {
+    height: 32px;
+    padding: 0 8px;
+    margin: 0 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(49, 49, 49);
+    display: inline-flex;
+    align-items: center;
+    font-family: "Segoe UI", "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    white-space: nowrap;
+    transition: background-color 0.2s ease-out;
+}
+
+.git-branch-button:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.git-branch-button:active {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Add this new style */
+.bolt-header-command-item-button {
+    order: 3 !important;  /* Try to force it before the more actions button */
+}
+
+/* Make our button wrapper match other items */
+.bolt-header-command-item-button {
+    display: inline-flex;
+    align-items: center;
+}

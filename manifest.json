@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Azure DevOps Git Branch Generator",
+  "version": "1.0",
+  "description": "Copies formatted Git branch names from Azure DevOps tickets",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.visualstudio.com/*", "*://dev.azure.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
